@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/favoritesFragment">
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="kz.azamat.movieapp.presentation.screen.favorites.FavoritesFragment"
+        android:label="FavoritesFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="kz.azamat.movieapp.presentation.screen.search.SearchFragment"
+        android:label="SearchFragment" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="kz.azamat.movieapp.presentation.screen.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="kz.azamat.movieapp.presentation.screen.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+</navigation>
