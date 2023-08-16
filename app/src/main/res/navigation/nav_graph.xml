@@ -3,7 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/favoritesFragment">
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="kz.azamat.movieapp.presentation.screen.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
 
     <fragment
         android:id="@+id/favoritesFragment"
@@ -18,9 +24,5 @@
         android:name="kz.azamat.movieapp.presentation.screen.details.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" />
-    <fragment
-        android:id="@+id/mainFragment"
-        android:name="kz.azamat.movieapp.presentation.screen.main.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+
 </navigation>
